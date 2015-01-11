@@ -37,6 +37,8 @@ void DriveTrain::Move(float left, float right)
 		right = 0;
 	printf("MOVE! l:%f\tr:%f\n", left, right);
 	
+	left *= -1;
+	
 	left_1->Set(left);
 	left_2->Set(left);
 	left_3->Set(left);
